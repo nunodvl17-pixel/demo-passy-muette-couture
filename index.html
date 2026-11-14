@@ -10,12 +10,12 @@
 <meta property="og:locale" content="fr_FR">
 <meta property="og:title" content="Passy Muette Couture | Retouches à La Muette, Paris 16e">
 <meta property="og:description" content="4,7/5 sur 81 avis Google. Retouches, transformations et réparations, du lundi au samedi.">
-<meta name="theme-color" content="#1D1220">
+<meta name="theme-color" content="#22160F">
 <meta name="robots" content="noindex, nofollow">
-<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%231D1220'/%3E%3Crect x='8' y='24' width='48' height='16' rx='3' fill='%23F4C430'/%3E%3Cpath d='M16 24v7M24 24v5M32 24v7M40 24v5M48 24v7' stroke='%2310131C' stroke-width='2'/%3E%3Cpath d='M38 24v16' stroke='%23D2283C' stroke-width='3'/%3E%3C/svg%3E">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%2322160F'/%3E%3Crect x='8' y='24' width='48' height='16' rx='3' fill='%23F4C430'/%3E%3Cpath d='M16 24v7M24 24v5M32 24v7M40 24v5M48 24v7' stroke='%2310131C' stroke-width='2'/%3E%3Cpath d='M38 24v16' stroke='%23D2283C' stroke-width='3'/%3E%3C/svg%3E">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Geist:wght@400;500;600;700&family=Cormorant+Garamond:ital,wght@0,500;1,500&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Geist:wght@400;500;600;700&family=Instrument+Serif:ital@0;1&display=swap" rel="stylesheet">
 <script type="importmap">
 { "imports": { "three": "https://cdn.jsdelivr.net/npm/three@0.160.0/build/three.module.js", "three/addons/": "https://cdn.jsdelivr.net/npm/three@0.160.0/examples/jsm/" } }
 </script>
@@ -55,23 +55,23 @@
 }
 </script>
 <style>
-  /* ---------- Palette du prospect. Le jaune est réservé au mètre ruban ---------- */
+  /* ---------- Palette « cognac » : expresso, crème et cuir. Le jaune est réservé au mètre ruban ---------- */
   :root {
-    --night: #1D1220; --night-2: #2C1B2E; --mist: #F7F2EF; --ink: #1F1420; --grey: #6A5866; --grey-light: #CDB8C6;
-    --accent: #F2E6EC; --on-accent: #1D1220; --accent-hover: #FFFFFF; --accent-text: #E3A6C0; --link: #8C3B62; --star: #E3A6C0;
+    --night: #22160F; --night-2: #32221A; --mist: #F6F0E8; --ink: #1E140E; --grey: #6B5A4E; --grey-light: #CDB9A6;
+    --accent: #F3E6D3; --on-accent: #22160F; --accent-hover: #FFFFFF; --accent-text: #DDA36A; --link: #8F5426; --star: #DDA36A;
     --tape: #F4C430; --red: #D2283C; --radius: 26px;
-    --glass: rgba(29,18,32, .9);
-    --serif: "Cormorant Garamond", "Times New Roman", serif;
+    --glass: rgba(30, 19, 12, .9);
+    --serif: "Instrument Serif", "Times New Roman", serif;
   }
   * { box-sizing: border-box; }
   html { -webkit-text-size-adjust: 100%; background: var(--night); }
   body {
-    margin: 0; color: #fff; background: radial-gradient(90% 60% at 50% 30%, #3A2238 0%, var(--night) 70%) fixed, var(--night);
+    margin: 0; color: #fff; background: radial-gradient(90% 60% at 50% 30%, #3b261a 0%, var(--night) 70%) fixed, var(--night);
     font: 400 18px/1.55 "Geist", system-ui, -apple-system, sans-serif;
     -webkit-font-smoothing: antialiased; text-rendering: optimizeLegibility;
   }
   h1, h2, h3 { margin: 0; font-weight: 600; letter-spacing: -0.03em; line-height: 1.05; }
-  h1, h2 { font-family: var(--serif); font-weight: 500; letter-spacing: -0.015em; line-height: 0.98; }
+  h1, h2 { font-family: var(--serif); font-weight: 400; letter-spacing: -0.015em; line-height: 0.98; }
   h1 em, h2 em { font-style: italic; color: var(--accent-text); }
   a { color: inherit; }
   :focus-visible { outline: 3px solid var(--accent-text); outline-offset: 4px; border-radius: 8px; }
@@ -82,7 +82,7 @@
   #world.ready { opacity: 1; }
 
   /* ---------- Navigation ---------- */
-  .nav { position: fixed; inset: 0 0 auto 0; z-index: 50; background: rgba(29,18,32,.86); border-bottom: 1px solid rgba(255,255,255,.07); }
+  .nav { position: fixed; inset: 0 0 auto 0; z-index: 50; background: rgba(34,22,15,.86); border-bottom: 1px solid rgba(255,255,255,.07); }
   .nav .in { display: flex; align-items: center; justify-content: space-between; height: 56px; gap: 24px; width: min(1240px, 100% - 32px); margin-inline: auto; }
   .nav .brand { font-family: var(--serif); font-style: italic; font-size: 22px; text-decoration: none; display: inline-flex; align-items: center; gap: 10px; white-space: nowrap; }
   .nav .brand i { width: 22px; height: 6px; border-radius: 2px; background: var(--tape); display: block; }
@@ -94,9 +94,9 @@
 
   /* compteur de centimètres déroulés */
   .cm { position: fixed; left: 16px; bottom: 16px; z-index: 40; display: flex; align-items: baseline; gap: 6px; font-size: 13px; color: var(--grey-light);
-        background: rgba(29,18,32,.7); border: 1px solid rgba(255,255,255,.08); padding: 7px 12px; border-radius: 999px; pointer-events: none; }
+        background: rgba(30,19,12,.7); border: 1px solid rgba(255,255,255,.08); padding: 7px 12px; border-radius: 999px; pointer-events: none; }
   .cm b { font-family: var(--serif); font-weight: 400; font-size: 22px; color: var(--tape); line-height: 1; min-width: 2.2ch; text-align: right; }
-  .demo-note { position: fixed; right: 16px; bottom: 16px; z-index: 40; background: rgba(31,20,32,.88); color: #fff; font-size: 12px; padding: 7px 12px; border-radius: 999px; white-space: nowrap; }
+  .demo-note { position: fixed; right: 16px; bottom: 16px; z-index: 40; background: rgba(30,20,14,.88); color: #fff; font-size: 12px; padding: 7px 12px; border-radius: 999px; white-space: nowrap; }
 
   /* ---------- Boutons ---------- */
   .pill { display: inline-flex; align-items: center; justify-content: center; gap: 10px; min-height: 50px; padding: 0 24px; border-radius: 999px; font-weight: 600; font-size: 17px; text-decoration: none; transition: transform .2s ease, background .2s ease; }
@@ -175,7 +175,7 @@
   .card.dark .num { color: var(--accent-text); }
   .card h3 { font-size: 27px; margin: 14px 0 12px; }
   .card ul { list-style: none; padding: 0; margin: 0; }
-  .card li { display: flex; justify-content: space-between; gap: 16px; padding: 11px 0; border-top: 1px solid rgba(31,20,32,.1); font-size: 16px; }
+  .card li { display: flex; justify-content: space-between; gap: 16px; padding: 11px 0; border-top: 1px solid rgba(30,20,14,.1); font-size: 16px; }
   .card.dark li { border-top-color: rgba(255,255,255,.12); }
   .card li b { font-weight: 600; white-space: nowrap; }
   .card .foot { margin: 14px 0 0; font-size: 14px; color: var(--grey); }
@@ -273,7 +273,7 @@
   }
   @media (max-width: 760px) {
     .ch-slides .head-only h2, .ch-slides .fine { display: none; }
-    .head-only .label { background: rgba(29,18,32,.82); padding: 6px 12px; border-radius: 999px; }
+    .head-only .label { background: rgba(30,19,12,.82); padding: 6px 12px; border-radius: 999px; }
   }
   @media (max-width: 760px) and (max-height: 700px) {
     .card li:nth-child(4) { display: none; }
@@ -292,7 +292,7 @@
   .ess-actions { justify-content: flex-start; margin: 26px 0 64px; }
   .pill-dark { background: var(--night); color: #fff; }
   .pill-dark:hover { background: var(--night-2); }
-  .pill-line { color: var(--ink); box-shadow: inset 0 0 0 1.5px rgba(31,20,32,.25); }
+  .pill-line { color: var(--ink); box-shadow: inset 0 0 0 1.5px rgba(30,20,14,.25); }
   .pill-line:hover { box-shadow: inset 0 0 0 1.5px var(--ink); }
   .ess-h { font-size: 24px; letter-spacing: -0.02em; margin: 0 0 18px; display: flex; flex-wrap: wrap; align-items: baseline; gap: 6px 14px; }
   .ess-h span { font-size: 14px; font-weight: 400; color: var(--grey); letter-spacing: 0; }
@@ -300,7 +300,7 @@
   .ep { background: #fff; border-radius: 22px; padding: 22px 22px 14px; }
   .ep-t { font-weight: 600; margin: 0 0 8px; font-size: 17px; }
   .ep ul { list-style: none; margin: 0; padding: 0; }
-  .ep li { display: flex; justify-content: space-between; gap: 12px; padding: 9px 0; border-top: 1px solid rgba(31,20,32,.08); font-size: 15px; color: var(--grey); }
+  .ep li { display: flex; justify-content: space-between; gap: 12px; padding: 9px 0; border-top: 1px solid rgba(30,20,14,.08); font-size: 15px; color: var(--grey); }
   .ep li b { color: var(--ink); font-weight: 600; white-space: nowrap; }
   .ess-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; }
   .ess-box { background: #fff; border-radius: 22px; padding: 28px 28px 24px; }
@@ -310,7 +310,7 @@
   .ess-score .stars { margin-top: 0; } .ess-score .stars svg { fill: var(--star); width: 20px; height: 20px; }
   .ess-score p { margin: 4px 0 0; color: var(--grey); font-size: 15px; }
   .ess-quotes { list-style: none; margin: 0 0 16px; padding: 0; }
-  .ess-quotes li { font-size: 17px; font-weight: 500; line-height: 1.4; letter-spacing: -0.01em; padding: 12px 0; border-top: 1px solid rgba(31,20,32,.08); }
+  .ess-quotes li { font-size: 17px; font-weight: 500; line-height: 1.4; letter-spacing: -0.01em; padding: 12px 0; border-top: 1px solid rgba(30,20,14,.08); }
   .ess-quotes span { display: block; font-weight: 400; font-size: 13px; color: var(--grey); margin-top: 4px; }
   .link-dark { color: var(--link); font-weight: 500; text-decoration: none; }
   .link-dark:hover { text-decoration: underline; }
@@ -318,7 +318,7 @@
   .ess-muted { color: var(--grey); margin: 0 0 16px; font-size: 15px; }
   .essentiel .status { color: var(--ink) !important; }
   .essentiel .hours th, .essentiel .hours td { color: var(--grey); }
-  .essentiel .hours tr + tr { border-top-color: rgba(31,20,32,.08); }
+  .essentiel .hours tr + tr { border-top-color: rgba(30,20,14,.08); }
   .essentiel .hours tr.today th, .essentiel .hours tr.today td { color: var(--ink); }
   .ess-urg { margin: 14px 0 0; } .ess-urg b { color: var(--ink); }
   .ess-foot { text-align: center; font-size: 14px; color: var(--grey); padding: 0 16px 90px; }
@@ -743,7 +743,7 @@
   renderer.outputColorSpace = THREE.SRGBColorSpace;
   renderer.toneMapping = THREE.ACESFilmicToneMapping;
   renderer.toneMappingExposure = 1.05;
-  const BG = new THREE.Color('#1D1220');
+  const BG = new THREE.Color('#22160F');
   renderer.setClearColor(BG, 1);
 
   const scene = new THREE.Scene();
@@ -752,18 +752,18 @@
   scene.environment = pmrem.fromScene(new RoomEnvironment(renderer), 0.04).texture;
   const camera = new THREE.PerspectiveCamera(38, 1, 0.1, 200);
 
-  scene.add(new THREE.HemisphereLight(0xfff3e2, 0x3a1f36, 0.9));
+  scene.add(new THREE.HemisphereLight(0xfff3e2, 0x3a2416, 0.9));
   const key = new THREE.DirectionalLight(0xfff0d8, 2.3); key.position.set(6, 12, 6); scene.add(key);
-  const rim = new THREE.DirectionalLight(0xf3a9cf, 1.0); rim.position.set(-8, 4, -10); scene.add(rim);
+  const rim = new THREE.DirectionalLight(0xffb98a, 1.0); rim.position.set(-8, 4, -10); scene.add(rim);
 
   const UP = new THREE.Vector3(0, 1, 0);
 
   // ----- Le sol : une toile de lin sombre -----
   const linen = (() => {
     const c = document.createElement('canvas'); c.width = c.height = 256; const g = c.getContext('2d');
-    g.fillStyle = '#271827'; g.fillRect(0, 0, 256, 256);
+    g.fillStyle = '#2b1c13'; g.fillRect(0, 0, 256, 256);
     for (let i = 0; i < 256; i += 2) {
-      g.fillStyle = 'rgba(255,225,240,' + (0.025 + Math.random() * 0.03) + ')'; g.fillRect(0, i, 256, 1);
+      g.fillStyle = 'rgba(255,230,200,' + (0.025 + Math.random() * 0.03) + ')'; g.fillRect(0, i, 256, 1);
       g.fillStyle = 'rgba(0,0,0,' + (0.05 + Math.random() * 0.05) + ')'; g.fillRect(i, 0, 1, 256);
     }
     const t = new THREE.CanvasTexture(c); t.wrapS = t.wrapT = THREE.RepeatWrapping; t.repeat.set(90, 90); t.colorSpace = THREE.SRGBColorSpace; t.anisotropy = 8;
@@ -872,7 +872,7 @@
   }
 
   // ----- Les objets de l'atelier, posés au bord du mètre (un par carte de prix) -----
-  const COGNAC = '#9C3D6A';   // couleur du fil
+  const COGNAC = '#B4692C';
   const threadMat = new THREE.MeshStandardMaterial({ color: COGNAC, roughness: 0.8 });
   const steel = new THREE.MeshStandardMaterial({ color: 0xe4e4e8, metalness: 1, roughness: 0.18 });
   function canvasTex(w, h, draw, srgb = true) { const c = document.createElement('canvas'); c.width = w; c.height = h; draw(c.getContext('2d'), w, h); const t = new THREE.CanvasTexture(c); if (srgb) t.colorSpace = THREE.SRGBColorSpace; return t; }
@@ -916,8 +916,8 @@
     const fg = new THREE.ExtrudeGeometry(outer, { depth: 0.12, bevelEnabled: true, bevelThickness: 0.05, bevelSize: 0.05, bevelSegments: 4, curveSegments: 16 }); fg.center();
     const frame = new THREE.Mesh(fg, gold); frame.position.x = 0.55; g.add(frame);
     const prong = new THREE.Mesh(new THREE.CylinderGeometry(0.045, 0.045, 1.75, 14), gold); prong.rotation.z = Math.PI / 2; prong.position.set(0.5, 0, 0.16); g.add(prong);
-    const leather = canvasTex(512, 144, (c, w, h) => { c.fillStyle = '#3B1F33'; c.fillRect(0, 0, w, h); for (let i = 0; i < 2500; i++) { c.fillStyle = 'rgba(0,0,0,' + Math.random() * 0.12 + ')'; c.fillRect(Math.random() * w, Math.random() * h, 2, 2); }
-      c.strokeStyle = '#E9C9DA'; c.lineWidth = 4; c.setLineDash([16, 10]); [20, h - 20].forEach((y) => { c.beginPath(); c.moveTo(0, y); c.lineTo(w, y); c.stroke(); }); });
+    const leather = canvasTex(512, 144, (c, w, h) => { c.fillStyle = '#6E3A1C'; c.fillRect(0, 0, w, h); for (let i = 0; i < 2500; i++) { c.fillStyle = 'rgba(0,0,0,' + Math.random() * 0.12 + ')'; c.fillRect(Math.random() * w, Math.random() * h, 2, 2); }
+      c.strokeStyle = '#E8C9A0'; c.lineWidth = 4; c.setLineDash([16, 10]); [20, h - 20].forEach((y) => { c.beginPath(); c.moveTo(0, y); c.lineTo(w, y); c.stroke(); }); });
     const strap = new THREE.Mesh(new RoundedBoxGeometry(3.2, 0.92, 0.12, 4, 0.04), new THREE.MeshStandardMaterial({ map: leather, roughness: 0.62 })); strap.position.set(-0.75, 0, -0.03); g.add(strap);
     return { g, lift: 0.85 };
   }
